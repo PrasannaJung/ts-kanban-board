@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.board-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.board {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  min-height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.board-header button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.card {
+  background: #e0e0e0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: move;
+}
+
+.card.dragging {
+  opacity: 0.5;
+  /* background-color: red; */
+}
+
+.board.drag-over {
+  background: #d0f0ff;
+}
