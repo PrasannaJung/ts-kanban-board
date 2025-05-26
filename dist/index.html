@@ -12,7 +12,7 @@
       <div class="board-container">
         <div class="board todo" id="0">
           <div class="board-header">
-            <span>Backlog</span>
+            <span>Todo</span>
             <button id="addCardBtn">➕</button>
           </div>
           <div id="card-1" class="card" draggable="true">Initial Task 1</div>
@@ -21,14 +21,15 @@
 
         <div class="board doing" id="1">
           <div class="board-header"><span>Doing</span></div>
+          <div class="empty-state">Drop tasks here to start working</div>
         </div>
 
         <div class="board done" id="2">
           <div class="board-header"><span>Done</span></div>
+          <div class="empty-state">Completed tasks will appear here</div>
         </div>
       </div>
     </main>
-
-    <script src="index.js"></script>
   </body>
+  <script type="module" src="index.js"></script>
 </html>
